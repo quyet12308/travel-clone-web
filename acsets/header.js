@@ -7,17 +7,14 @@ header.innerHTML = `
 <a href="#" class="logo"><span>T</span>ravel</a>
 
 <nav class="navbar">
-    <a href="#home">home</a>
-    <a href="#book">book</a>
-    <a href="#packages">packages</a>
-    <a href="#services">services</a>
-    <a href="#gallery">gallery</a>
-    <a href="#review">review</a>
-    <a href="#contact">contact</a>
+    <a href="#china">china</a>
+    <a href="#vietnam">vietnam</a>
+    <a href="#japan">japan</a>
+    <a href="#russia">russia</a>
 </nav>
 
 <div class="icons">
-    <a href="#" class="logo"><span>T</span>ravel</a>
+    <a href="#home" class="logo"><span>h</span>ome</a>
 </div>
 
 <form action="" class="search-bar-container">

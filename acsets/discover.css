@@ -1,3 +1,22 @@
+*:root {
+    --background-discover: rgb(207, 66, 14);
+    --khoangCach: 500px;
+    --khoangCachHover: 550px;
+}
+
+body {
+    background: rgb(51, 51, 51);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+#header .icon a span {
+    color: var(--background-discover);
+    font-size: 30px;
+} */
+
 .img_discover {
     position: relative;
     display: block;
@@ -11,22 +30,24 @@
     position: absolute;
     text-align: center;
     right: 40%;
-    top: 500px;
+    top: 45%;
     z-index: 2;
 }
 
 .content_discover h3 {
+    margin-bottom: 15px;
     color: #fff;
     font-size: 30px;
 }
 
 .content_discover p {
+    margin-bottom: 15px;
     color: #fff;
     font-size: 20px;
 }
 
 .content_discover button {
-    background-color: rgb(207, 66, 14);
+    background-color: var(--background-discover);
     border-radius: 8px;
     width: 110px;
     height: 40px;
@@ -34,11 +55,159 @@
     opacity: 0.8;
 }
 
-.content_discover button a {
+#china h2,
+#vietnam h2,
+#japan h2,
+#russia h2 {
+    text-align: center;
+    font-size: 40px;
     color: #fff;
-
+    position: relative;
 }
 
+#vietnam h2,
+#japan h2,
+#russia h2,
 .box-container {
-    display: inline;
+    margin-top: var(--khoangCach);
+}
+
+#china h2 span,
+#vietnam h2 span,
+#japan h2 span,
+#russia h2 span {
+    color: var(--background-discover);
+}
+
+#china img,
+#china .div_discover,
+#vietnam img,
+#vietnam .div_discover,
+#japan img,
+#japan .div_discover,
+#russia img,
+#russia .div_discover {
+    /* visibility: hidden; */
+    border-radius: 20px;
+    visibility: visible;
+}
+
+#china img:hover,
+#vietnam img:hover,
+#japan img:hover,
+#rusia img:hover {
+
+    cursor: pointer;
+}
+
+#china .div_discover:hover,
+#vietnam .div_discover:hover,
+#japan .div_discover:hover,
+#russia .div_discover:hover {
+    cursor: pointer;
+    background: rgb(72, 150, 142);
+    transition: 0.6s;
+}
+
+.div_discover h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.div_discover p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#china img {
+    /* visibility: hidden; */
+    position: absolute;
+    right: 15%;
+    width: var(--khoangCach);
+    animation: china-img 2s 0.5s ease-in-out 1;
+}
+
+#china .div_discover {
+    position: absolute;
+    left: 10%;
+    animation: china-div 2s 0.5s ease-in-out 1;
+}
+
+/* vietnam */
+#vietnam img {
+    position: absolute;
+    left: 15%;
+    width: var(--khoangCach);
+    animation: vietnam-img 2s 0.5s ease-in-out 1;
+}
+
+#vietnam .div_discover {
+    position: absolute;
+    right: 10%;
+    animation: vietnam-div 2s 0.5s ease-in-out 1;
+}
+
+/* japan */
+#japan img {
+    position: absolute;
+    right: 15%;
+    width: var(--khoangCach);
+    animation: japan-img 2s 0.5s ease-in-out 1;
+}
+
+#japan .div_discover {
+    position: absolute;
+    left: 10%;
+    animation: japan-div 2s 0.5s ease-in-out 1;
+}
+
+/* russia */
+#russia img {
+    position: absolute;
+    left: 15%;
+    width: var(--khoangCach);
+    animation: russia-img 2s 0.5s ease-in-out 1;
+}
+
+#russia .div_discover {
+    position: absolute;
+    right: 10%;
+    animation: russia-div 2s 0.5s ease-in-out 1;
+}
+
+@keyframes china-img {
+    to {
+        /* width: var(--khoangCachHover); */
+        /* left: ; */
+        visibility: visible;
+    }
+}
+
+.div_discover {
+    display: block;
+    width: var(--khoangCach);
+    height: var(--khoangCach);
+    background: #fff;
+    position: relative;
+}
+
+.header-black {
+    background-color: #333;
+    height: 80px;
+}
+
+.content_discover button a {
+    color: #fff;
+}
+
+#box_about_us {
+    margin-left: 5%;
+}
+
+.footer {
+    display: contents;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
 }

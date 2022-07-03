@@ -4,7 +4,7 @@ footer.innerHTML = `
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" id="box_about_us">
             <h3>about us</h3>
             <p>Come with us and have wonderful moments with family and friends. We will always try to make you have
             the most comfortable moments. Sincerely thank you.</p>
