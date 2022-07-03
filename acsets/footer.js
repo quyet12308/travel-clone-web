@@ -9,7 +9,7 @@ footer.innerHTML = `
             <p>Come with us and have wonderful moments with family and friends. We will always try to make you have
             the most comfortable moments. Sincerely thank you.</p>
         </div>
-        <div class="box">
+        <div class="box" id="box_branch">
             <h3>branch locations</h3>
             <a href="#">vietnam</a>
             <a href="#">USA</a>
@@ -18,7 +18,7 @@ footer.innerHTML = `
             <a href="#">india</a>
             <a href="#">china</a>
         </div>
-        <div class="box">
+        <div class="box" id="box_q">
             <h3>quick links</h3>
             <a href="#">home</a>
             <a href="#">book</a>
@@ -28,7 +28,7 @@ footer.innerHTML = `
             <a href="#">review</a>
             <a href="#">contact</a>
         </div>
-        <div class="box">
+        <div class="box" id="box_follow">
             <h3>follow us</h3>
             <a href="#">facebook</a>
             <a href="#">instagram</a>

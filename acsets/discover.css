@@ -55,6 +55,13 @@ body {
     opacity: 0.8;
 }
 
+.content_discover button:hover {
+    background: none;
+    cursor: pointer;
+    color: #333;
+    transition: 0.6s;
+}
+
 #china h2,
 #vietnam h2,
 #japan h2,
@@ -118,6 +125,25 @@ body {
 .div_discover p {
     text-align: center;
     font-size: 30px;
+}
+
+.div_discover .translate-btn {
+    text-align: center;
+}
+
+.div_discover .translate-btn input {
+    display: inline-block;
+    margin: 30px;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    background: var(--background-discover);
+}
+
+.div_discover .translate-btn input:hover {
+    cursor: pointer;
+    background: #fff;
+    transition: 0.6s;
 }
 
 #china img {
@@ -211,3 +237,230 @@ body {
     bottom: 0;
     left: 10%;
 }
+
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+        position: relative;
+    }
+
+    #china img,
+    #japan img,
+    #vietnam .div_discover,
+    #russia .div_discover {
+        position: absolute;
+        right: 5%;
+    }
+
+    #vietnam img,
+    #russia img,
+    #china .div_discover,
+    #japan .div_discover {
+        position: absolute;
+        left: 5%;
+    }
+
+    .content_discover {
+        position: absolute;
+        top: 140px;
+        left: 45%;
+    }
+}
+
+@media (max-width:991px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    html {
+        position: relative;
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #china img,
+    #japan img,
+    #vietnam .div_discover,
+    #russia .div_discover {
+        position: absolute;
+        right: 3%;
+        width: 300px;
+    }
+
+    .div_discover h3 {
+        font-size: 30px;
+    }
+
+    .div_discover p {
+        font-size: 26px;
+    }
+
+    .box {
+        width: 50px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+
+    #vietnam img,
+    #russia img,
+    #china .div_discover,
+    #japan .div_discover {
+        position: absolute;
+        right: 3%;
+        width: 350px;
+    }
+
+    .div_discover h3 {
+        font-size: 25px;
+    }
+
+    .div_discover p {
+        font-size: 23px;
+    }
+
+    #box_follow {
+        margin-left: 40px;
+    }
+
+    #box_q {
+        margin-left: 40px;
+    }
+
+}
+
+/* @media (max-width:450px) {
+
+    * {
+        font-size: 100%;
+    }
+
+    html {
+        position: relative;
+    }
+
+    #home img {
+        width: 100%;
+    }
+
+    .content_discover {
+        position: absolute;
+        top: 60px;
+        left: 44%;
+    }
+
+    .content_discover h3 {
+        font-size: 15px;
+    }
+
+    .content_discover p {
+        font-size: 10px;
+    }
+
+    .content_discover button {
+        width: 50px;
+        height: 30px;
+    }
+
+    #vietnam img,
+    #russia img,
+    #china .div_discover,
+    #japan .div_discover {
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        top: 350px;
+        width: 350px;
+    }
+
+    #chian img,
+    #japan img,
+    #vietnam .div_discover,
+    #russia .div_discover {
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        top: 350px;
+        width: 350px;
+    }
+
+    #china,
+    #vietnam,
+    #japan,
+    #russia {
+        display: inline;
+        position: relative;
+        /* margin-bottom: 500px; */
+/* }
+
+#china img {
+    position: absolute;
+    right: 10%;
+}
+
+#vietnam {
+    position: absolute;
+    top: 1000px;
+    right: 10%;
+    margin-top: 420px;
+
+}
+
+#japan {
+    position: absolute;
+    right: 10%;
+    margin-top: 850px;
+}
+
+#russia {
+    position: absolute;
+    right: 10%;
+    margin-top: 1250px;
+}
+
+.footer {
+    margin-top: 1500px;
+}
+
+#box_branch {
+    margin-left: 40px;
+}
+}
+ */
