@@ -1,0 +1,44 @@
+.img_discover {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content_discover {
+    position: absolute;
+    text-align: center;
+    right: 40%;
+    top: 500px;
+    z-index: 2;
+}
+
+.content_discover h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.content_discover p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.content_discover button {
+    background-color: rgb(207, 66, 14);
+    border-radius: 8px;
+    width: 110px;
+    height: 40px;
+    border: solid 1px #333;
+    opacity: 0.8;
+}
+
+.content_discover button a {
+    color: #fff;
+
+}
+
+.box-container {
+    display: inline;
+}

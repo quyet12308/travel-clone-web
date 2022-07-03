@@ -1,4 +1,5 @@
 let searchBtn = document.querySelector('#search-btn');
+let discoverBtn = document.getElementById("discover")
 let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container');
@@ -97,3 +98,8 @@ var swiper = new Swiper(".brand-slider", {
     },
   },
 });
+
+discoverBtn.addEventListener("click", () => {
+  window.location.href = "./acsets/discover.html";
+})
+
