@@ -6,6 +6,7 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+const header = document.getElementById('header');
 
 window.onscroll = () => {
   searchBtn.classList.remove('fa-times');
@@ -33,6 +34,15 @@ formClose.addEventListener('click', () => {
   loginForm.classList.remove('active');
 });
 
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 100) {
+    header.classList.add('header-black');
+    // header.classList.remove('')
+  } else {
+    header.classList.remove('header-black');
+  }
+})
 videoBtn.forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelector('.controls .active').classList.remove('active');

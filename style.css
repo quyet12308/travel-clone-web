@@ -105,6 +105,16 @@ header .logo span {
   color: var(--colorBc);
 }
 
+header {
+  background: none;
+  /* opacity: 0.1; */
+}
+
+.header-black {
+  background: #333;
+  transition: 0.4;
+}
+
 header .navbar a {
   color: #fff;
   font-size: 2rem;
